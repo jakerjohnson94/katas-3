@@ -12,348 +12,314 @@
             background: gray;
             margin: 5px;
         }
-        h1{ font-size: 1.2em;}
-        body{
-          
-           
+
+        h1 {
+            font-size: 1.2em;
         }
 
-        
+        body {}
     </style>
 </head>
-<!--  (1, 3, 5, ..., 17, 19)
- (5, 10, 15, ..., 95, 100)
- (1, 4, 9, ..., 81, 100)
- (20, 19, 18, ..., 2, 1)
-. (20, 18, 16, ..., 4, 2)
- (19, 17, 15, ..., 3, 1)
-. (100, 95, 90, ..., 10, 5)
-. (100, 81, 64, ..., 4, 1)
- (469, 755, 244, ..., 940, 472)
- (244, 758, 450, ..., 940, 472)
- (469, 755, 245, ..., 179, 535)
- (219961, 570025, ..., 222784)
 
-
-
-
-
- (remember #4, above).
-
-As in #21, but alternate colors so that every other rectangle is red.
-As in #21, but color the rectangles with even widths red.  -->
 <body>
     <div class="wrap">
-    <h1>Display the numbers from 1 to 20. </h1>
-    <script> 
+        <h1>Display the numbers from 1 to 20. </h1>
+        <script> 
 
-        const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+            const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
-        for (let i = 1; i <= 20; i++) {
-            const div = document.createElement('div');
-            div.textContent = i;
-            document.body.appendChild(div);
-        }
-    </script>
-    </div>
-     <div class="wrap">
-    <br> <h1>Display the even numbers from 1 to 20. </h1>
-    <script>
-
-        for (let i = 1; i <= 20; i++) {
-            if (i % 2 === 0) {
-                const div = document.createElement('div');
-                div.textContent = i;
-                document.body.appendChild(div);
-            }
-        }
-    </script>
-    </div>
-     <div class="wrap">
-    <br> <h1> Display the odd numbers from 1 to 20.</h1>
-    <script>
-
-
-        for (let i = 1; i <= 20; i++) {
-            if (i % 2 !== 0) {
-                const div = document.createElement('div');
-                div.textContent = i;
-                document.body.appendChild(div);
-            }
-        }
-    </script>
-    </div>
-     <div class="wrap">
-    <br> <h1>Display the multiples of 5 up to 100. </h1>
-    <script>
-
-        for (let i = 0; i <= 20; i += 5) {
-            const div = document.createElement('div');
-            div.textContent = i;
-            document.body.appendChild(div);
-
-        }
-    </script>
-    </div>
-     <div class="wrap">
-    <br> <h1>Display the square numbers up to 100.</h1>
-    <script>
-        for (i = 1; i <= 10; i++) {
-            const div = document.createElement('div');
-            div.textContent = i * i;
-            document.body.appendChild(div);
-        }
-    </script>
-    </div>
-     <div class="wrap">
-    <br>    <h1> Display the numbers counting backwards from 20 to 1.  </h1>
-    <script>
-        for (let i = 20; i >= 1; i--) {
-            const div = document.createElement('div');
-            div.textContent = i;
-            document.body.appendChild(div);
-        }
-    </script>
-    </div>
-     <div class="wrap">
-    <br> 
-    <h1>  Display the even numbers counting backwards from 20 </h1>
-    <script>
-        for (let i = 20; i >= 0; i--) {
-            if (i % 2 === 0) {
-                const div = document.createElement('div');
-                div.textContent = i;
-                document.body.appendChild(div);
-            }
-        }
-    </script>
-    </div>
-     <div class="wrap">
-    <br>
-    <h1> Display the odd numbers from 20 to 1, counting backwards  </h1>
-    <script>
-
-
-        for (let i = 20; i >= 1; i--) {
-            if (i % 2 !== 0) {
-                const div = document.createElement('div');
-                div.textContent = i;
-                document.body.appendChild(div);
-            }
-        }
-    </script>
-    </div>
-     <div class="wrap">
-    <br>
-    <h1> Display the multiples of 5, counting down from 100  </h1>
-    <script>
-
-        for (let i = 20; i >= 0; i -= 5) {
-            const div = document.createElement('div');
-            div.textContent = i;
-            document.body.appendChild(div);
-
-        }
-
-
-    </script>
-    </div>
-     <div class="wrap">
-    <br>
-    <h1>  Display the square numbers, counting down from 100 </h1>
-    <script>
-        for (i = 10; i > 0; i--) {
-            const div = document.createElement('div');
-            div.textContent = i * i;
-            document.body.appendChild(div);
-        }
-
-    </script>
-    </div>
-     <div class="wrap">
-    <br>
-    <h1> Display the 20 elements of sampleArray.  </h1>
-    <script>
-        for (let i = 0; i < sampleArray.length; i++) {
-            const div = document.createElement('div');
-            div.textContent = sampleArray[i];
-            document.body.appendChild(div);
-        }
-
-    </script>
-    </div>
-     <div class="wrap">
-    <br>
-    <h1>  Display all the even numbers contained in sampleArray. </h1>
-    <script>
-        for (let i = 0; i < sampleArray.length; i++) {
-            if (sampleArray[i] % 2 === 0) {
-                const div = document.createElement('div');
-                div.textContent = sampleArray[i];
-                document.body.appendChild(div);
-            }
-        }
-    </script>
-    </div>
-     <div class="wrap">
-    <br>
-    <h1>  Display all the odd numbers contained in sampleArray. </h1>
-    <script>
-        for (let i = 0; i < sampleArray.length; i++) {
-            if (sampleArray[i] % 2 !== 0) {
-                const div = document.createElement('div');
-                div.textContent = sampleArray[i];
-                document.body.appendChild(div);
-            }
-        }
-    </script>
-    </script>
-    </div>
-     <div class="wrap">
-    <br>
-    <h1>  Display the square of each element in sampleArray. </h1>
-    <script>
-        let newArr = sampleArray.map((a) => a * a);
-        for (let i = 0; i < newArr.length; i++) {
-            const div = document.createElement('div');
-            div.textContent = newArr[i];
-            document.body.appendChild(div);
-        }
-
-    </script>
-    </div>
-     <div class="wrap">
-    <br>
-    <h1>  Display the sum of all the numbers from 1 to 20. </h1>
-    <script>
-        {
-            let result;
             for (let i = 1; i <= 20; i++) {
-                result = + i;
-            } const div = document.createElement('div');
-            div.textContent = result;
-            document.body.appendChild(div);
-        }
-    </script>
+                const div = document.createElement('div');
+                div.textContent = i;
+                document.body.appendChild(div);
+            }
+        </script>
     </div>
-     <div class="wrap">
-    <br>
-    <h1> Display the sum of all the elements in sampleArray.  </h1>
-    <script>
-        {
-            const div = document.createElement('div');
-            div.textContent = sampleArray.reduce((a, b) => a + b);
+    <div class="wrap">
+        <br>
+        <h1>Display the even numbers from 1 to 20. </h1>
+        <script>
+
+            for (let i = 1; i <= 20; i++) {
+                const div = document.createElement('div')
+
+                document.body.appendChild(div);
+                (i % 2 === 0) ? div.textContent = i : null;
 
 
-            document.body.appendChild(div);
-        }
-    </script>
+            }
+        </script>
     </div>
-     <div class="wrap">
-    <br>
-    <h1>Display the smallest element in sampleArray.   </h1>
-    <script>
-        {
-            const div = document.createElement('div');
-            div.textContent = Math.min(...sampleArray);
-            document.body.appendChild(div);
-        }
-    </script>
-    </div>
-     <div class="wrap">
-    <br>
-    <h1>  isplay the largest element in sampleArray. .</h1>
-    <script>
-        {
-            const div = document.createElement('div');
-            div.textContent = Math.max(...sampleArray);
-            document.body.appendChild(div);
-        }
+    <div class="wrap">
+        <br>
+        <h1> Display the odd numbers from 1 to 20.</h1>
+        <script>
 
-    </script>
-    </div>
-     <div class="wrap">
-    <br>
-    <h1>   Display 20 solid gray rectangles, each 20px high and 100px wide </h1>
-    <script>
-        for (let i = 1; i <= 20; i++) {
-            const div = document.createElement('div');
-            div.setAttribute('style', 'width:100px');
-            div.classList = 'gray-19';
-            document.body.appendChild(div);
-        }
 
-    </script>
-    </div>
-     <div class="wrap">
-    <br>
-    <h1>  Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px </h1>
-    <script>
-        for (let i = 0; i <= 100; i += 5) {
-            const div = document.createElement('div');
-            div.classList = 'gray-19';
-            div.setAttribute('style', 'width:' + (100 + i) + 'px;');
-            document.body.appendChild(div);
-        }
+            for (let i = 1; i <= 20; i++) {
+                const div = document.createElement('div');
 
-    </script>
-    </div>
-     <div class="wrap">
-    <br>
-    <h1>  Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray.</h1>
-    <script>
-        for (let i = 0; i <= sampleArray.length; i++) {
-            const div = document.createElement('div');
-            div.classList = 'gray-19';
-            div.setAttribute('style', 'width:' + sampleArray[i] + 'px;');
-            document.body.appendChild(div);
-        }
+                document.body.appendChild(div);
 
-    </script>
+                (i % 2 !== 0) ? div.textContent = i : null;
+
+            }
+        </script>
     </div>
-     <div class="wrap">
-    <br>    <h1> As in #21, but alternate colors so that every other rectangle is red.</h1>
-    <script>
-        for (let i = 0; i <= sampleArray.length; i++) {
-            if (i % 2 === 0) {
+    <div class="wrap">
+        <br>
+        <h1>Display the multiples of 5 up to 100. </h1>
+        <script>
+
+            for (let i = 0; i <= 20; i += 5) {
+                const div = document.createElement('div');
+                div.textContent = i;
+                document.body.appendChild(div);
+
+            }
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1>Display the square numbers up to 100.</h1>
+        <script>
+            for (i = 1; i <= 10; i++) {
+                const div = document.createElement('div');
+                div.textContent = i * i;
+                document.body.appendChild(div);
+            }
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display the numbers counting backwards from 20 to 1. </h1>
+        <script>
+            for (let i = 20; i >= 1; i--) {
+                const div = document.createElement('div');
+                div.textContent = i;
+                document.body.appendChild(div);
+            }
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display the even numbers counting backwards from 20 </h1>
+        <script>
+            for (let i = 20; i >= 0; i--) {
+                const div = document.createElement('div');
+                div.textContent = i;
+                (i % 2 === 0) ? document.body.appendChild(div) : null;
+
+            }
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display the odd numbers from 20 to 1, counting backwards </h1>
+        <script>
+
+
+            for (let i = 20; i >= 1; i--) {
+                const div = document.createElement('div');
+                div.textContent = i;
+                (i % 2 !== 0) ? document.body.appendChild(div) : null;
+
+            }
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display the multiples of 5, counting down from 100 </h1>
+        <script>
+
+            for (let i = 20; i >= 0; i -= 5) {
+                const div = document.createElement('div');
+                div.textContent = i;
+                document.body.appendChild(div);
+
+            }
+
+
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display the square numbers, counting down from 100 </h1>
+        <script>
+            for (i = 10; i > 0; i--) {
+                const div = document.createElement('div');
+                div.textContent = i * i;
+                document.body.appendChild(div);
+            }
+
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display the 20 elements of sampleArray. </h1>
+        <script>
+            for (let i = 0; i < sampleArray.length; i++) {
+                const div = document.createElement('div');
+                div.textContent = sampleArray[i];
+                document.body.appendChild(div);
+            }
+
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display all the even numbers contained in sampleArray. </h1>
+        <script>
+            for (let i = 0; i < sampleArray.length; i++) {
+                const div = document.createElement('div');
+                div.textContent = sampleArray[i];
+                (sampleArray[i] % 2 === 0) ? document.body.appendChild(div) : null;
+
+
+            }
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display all the odd numbers contained in sampleArray. </h1>
+        <script>
+            for (let i = 0; i < sampleArray.length; i++) {
+                const div = document.createElement('div');
+                div.textContent = sampleArray[i];
+                (sampleArray[i] % 2 !== 0) ? document.body.appendChild(div) : null;
+
+            }
+        </script>
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display the square of each element in sampleArray. </h1>
+        <script>
+            let newArr = sampleArray.map((a) => a * a);
+            for (let i = 0; i < newArr.length; i++) {
+                const div = document.createElement('div');
+                div.textContent = newArr[i];
+                document.body.appendChild(div);
+            }
+
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display the sum of all the numbers from 1 to 20. </h1>
+        <script>
+            {
+                let result;
+                for (let i = 1; i <= 20; i++) {
+                    result = + i;
+                } const div = document.createElement('div');
+                div.textContent = result;
+                document.body.appendChild(div);
+            }
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display the sum of all the elements in sampleArray. </h1>
+        <script>
+            {
+                const div = document.createElement('div');
+                div.textContent = sampleArray.reduce((a, b) => a + b);
+
+
+                document.body.appendChild(div);
+            }
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1>Display the smallest element in sampleArray. </h1>
+        <script>
+            {
+                const div = document.createElement('div');
+                div.textContent = Math.min(...sampleArray);
+                document.body.appendChild(div);
+            }
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display the largest element in sampleArray. .</h1>
+        <script>
+            {
+                const div = document.createElement('div');
+                div.textContent = Math.max(...sampleArray);
+                document.body.appendChild(div);
+            }
+
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display 20 solid gray rectangles, each 20px high and 100px wide </h1>
+        <script>
+            for (let i = 1; i <= 20; i++) {
+                const div = document.createElement('div');
+                div.setAttribute('style', 'width:100px');
+                div.classList = 'gray-19';
+                document.body.appendChild(div);
+            }
+
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px </h1>
+        <script>
+            for (let i = 0; i <= 100; i += 5) {
                 const div = document.createElement('div');
                 div.classList = 'gray-19';
-                div.setAttribute('style', 'width:' + sampleArray[i] + 'px;' + 'background: red;');
+                div.setAttribute('style', 'width:' + (100 + i) + 'px;');
                 document.body.appendChild(div);
-            } else {
+            }
+
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray.</h1>
+        <script>
+            for (let i = 0; i <= sampleArray.length; i++) {
                 const div = document.createElement('div');
                 div.classList = 'gray-19';
                 div.setAttribute('style', 'width:' + sampleArray[i] + 'px;');
                 document.body.appendChild(div);
-
-
             }
-        }
 
-    </script>
+        </script>
     </div>
-     <div class="wrap">
-    <br> 
-    <h1>  As in #21, but color the rectangles with even widths red.  </h1>
-    <script>
-        for (let i = 0; i <= sampleArray.length; i++) {
-            if (sampleArray[i]%2 === 0) {
+    <div class="wrap">
+        <br>
+        <h1> As in #21, but alternate colors so that every other rectangle is red.</h1>
+        <script>
+            for (let i = 0; i <= sampleArray.length; i++) {
                 const div = document.createElement('div');
                 div.classList = 'gray-19';
-                div.setAttribute('style', 'width:' + sampleArray[i] + 'px;' + 'background: red;');
+                (i % 2 === 0) ? div.setAttribute('style', 'width:' + sampleArray[i] + 'px;' + 'background: red;') : div.setAttribute('style', 'width:' + sampleArray[i] + 'px;');
                 document.body.appendChild(div);
-            } else {
-                const div = document.createElement('div');
-                div.classList = 'gray-19';
-                div.setAttribute('style', 'width:' + sampleArray[i] + 'px;');
-                document.body.appendChild(div);
-
-
             }
-        }
-    </script>
 
-</div>
+        </script>
+    </div>
+    <div class="wrap">
+        <br>
+        <h1> As in #21, but color the rectangles with even widths red. </h1>
+        <script>
+            for (let i = 0; i <= sampleArray.length; i++) {
+                const div = document.createElement('div');
+                div.classList = 'gray-19';
+                (sampleArray[i] % 2 === 0) ? div.setAttribute('style', 'width:' + sampleArray[i] + 'px;' + 'background: red;') : div.setAttribute('style', 'width:' + sampleArray[i] + 'px;');
+                document.body.appendChild(div);
+            }
+        </script>
+
+    </div>
 
 </body>
 
