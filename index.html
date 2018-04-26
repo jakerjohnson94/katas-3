@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>katas-3</title>
+    <style>
+        .gray-19 {
+            height: 20px;
+            background: gray;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <script> 
+        const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+
+        for (let i = 1; i <= 20; i++) {
+            const div = document.createElement('div');
+            div.textContent = i;
+            document.body.appendChild(div);
+        }
+    </script>
+    <br>
+    <script>
+
+        for (let i = 1; i <= 20; i++) {
+            if (i % 2 === 0) {
+                const div = document.createElement('div');
+                div.textContent = i;
+                document.body.appendChild(div);
+            }
+        }
+    </script>
+    <br>
+    <script>
+
+
+        for (let i = 1; i <= 20; i++) {
+            if (i % 2 !== 0) {
+                const div = document.createElement('div');
+                div.textContent = i;
+                document.body.appendChild(div);
+            }
+        }
+    </script>
+    <br>
+    <script>
+
+        for (let i = 0; i <= 20; i += 5) {
+            const div = document.createElement('div');
+            div.textContent = i;
+            document.body.appendChild(div);
+
+        }
+    </script>
+    <br>
+    <script>
+        for (i = 1; i <= 10; i++) {
+            const div = document.createElement('div');
+            div.textContent = i * i;
+            document.body.appendChild(div);
+        }
+    </script>
+    <br>
+    <script>
+        for (let i = 20; i >= 1; i--) {
+            const div = document.createElement('div');
+            div.textContent = i;
+            document.body.appendChild(div);
+        }
+    </script>
+    <br>
+    <script>
+        for (let i = 20; i >= 0; i--) {
+            if (i % 2 === 0) {
+                const div = document.createElement('div');
+                div.textContent = i;
+                document.body.appendChild(div);
+            }
+        }
+    </script>
+    <br>
+    <script>
+
+
+        for (let i = 20; i >= 1; i--) {
+            if (i % 2 !== 0) {
+                const div = document.createElement('div');
+                div.textContent = i;
+                document.body.appendChild(div);
+            }
+        }
+    </script>
+    <br>
+    <script>
+
+        for (let i = 20; i >= 0; i -= 5) {
+            const div = document.createElement('div');
+            div.textContent = i;
+            document.body.appendChild(div);
+
+        }
+
+
+    </script>
+    <br>
+    <script>
+        for (i = 10; i > 0; i--) {
+            const div = document.createElement('div');
+            div.textContent = i * i;
+            document.body.appendChild(div);
+        }
+
+    </script>
+    <br>
+    <script>
+        for (let i = 0; i < sampleArray.length; i++) {
+            const div = document.createElement('div');
+            div.textContent = sampleArray[i];
+            document.body.appendChild(div);
+        }
+
+    </script>
+    <br>
+    <script>
+        for (let i = 0; i < sampleArray.length; i++) {
+            if (sampleArray[i] % 2 === 0) {
+                const div = document.createElement('div');
+                div.textContent = sampleArray[i];
+                document.body.appendChild(div);
+            }
+        }
+    </script>
+    <br>
+    <script>
+        for (let i = 0; i < sampleArray.length; i++) {
+            if (sampleArray[i] % 2 !== 0) {
+                const div = document.createElement('div');
+                div.textContent = sampleArray[i];
+                document.body.appendChild(div);
+            }
+        }
+    </script>
+    </script>
+    <br>
+    <script>
+        let newArr = sampleArray.map((a) => a * a);
+        for (let i = 0; i < newArr.length; i++) {
+            const div = document.createElement('div');
+            div.textContent = newArr[i];
+            document.body.appendChild(div);
+        }
+
+    </script>
+    <br>
+    <script>
+        {
+            let result;
+            for (let i = 1; i <= 20; i++) {
+                result = + i;
+            } const div = document.createElement('div');
+            div.textContent = result;
+            document.body.appendChild(div);
+        }
+    </script>
+    <br>
+    <script>
+        {
+            const div = document.createElement('div');
+            div.textContent = sampleArray.reduce((a, b) => a + b);
+
+
+            document.body.appendChild(div);
+        }
+    </script>
+    <br>
+    <script>
+        {
+            const div = document.createElement('div');
+            div.textContent = Math.min(...sampleArray);
+            document.body.appendChild(div);
+        }
+    </script>
+    <br>
+    <script>
+        {
+            const div = document.createElement('div');
+            div.textContent = Math.max(...sampleArray);
+            document.body.appendChild(div);
+        }
+
+    </script>
+    <br>
+    <script>
+        for (let i = 1; i <= 20; i++) {
+            const div = document.createElement('div');
+            div.setAttribute('style', 'width:100px');
+            div.classList = 'gray-19';
+            document.body.appendChild(div);
+        }
+
+    </script>
+    <br>
+    <script>
+        for (let i = 0; i <= 100; i += 5) {
+            const div = document.createElement('div');
+            div.classList = 'gray-19';
+            div.setAttribute('style', 'width:' + (100 + i) + 'px;');
+            document.body.appendChild(div);
+        }
+
+    </script>
+    <br>
+    <script>
+        for (let i = 0; i <= sampleArray.length; i++) {
+            const div = document.createElement('div');
+            div.classList = 'gray-19';
+            div.setAttribute('style', 'width:' + sampleArray[i] + 'px;');
+            document.body.appendChild(div);
+        }
+
+    </script>
+    <br>
+    <script>
+        for (let i = 0; i <= sampleArray.length; i++) {
+            if (i % 2 === 0) {
+                const div = document.createElement('div');
+                div.classList = 'gray-19';
+                div.setAttribute('style', 'width:' + sampleArray[i] + 'px;' + 'background: red;');
+                document.body.appendChild(div);
+            } else {
+                const div = document.createElement('div');
+                div.classList = 'gray-19';
+                div.setAttribute('style', 'width:' + sampleArray[i] + 'px;');
+                document.body.appendChild(div);
+
+
+            }
+        }
+
+    </script>
+    <br> 
+    <script>
+        for (let i = 0; i <= sampleArray.length; i++) {
+            if (sampleArray[i]%2 === 0) {
+                const div = document.createElement('div');
+                div.classList = 'gray-19';
+                div.setAttribute('style', 'width:' + sampleArray[i] + 'px;' + 'background: red;');
+                document.body.appendChild(div);
+            } else {
+                const div = document.createElement('div');
+                div.classList = 'gray-19';
+                div.setAttribute('style', 'width:' + sampleArray[i] + 'px;');
+                document.body.appendChild(div);
+
+
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
