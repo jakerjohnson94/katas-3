@@ -19,6 +19,8 @@
 
         body {}
     </style>
+
+<script src="script.js"></script>
 </head>
 
 <body>
@@ -26,91 +28,53 @@
         <h1>Display the numbers from 1 to 20. </h1>
         <script> 
 
-            const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
-
-            for (let i = 1; i <= 20; i++) {
-                const div = document.createElement('div');
-                div.textContent = i;
-                document.body.appendChild(div);
-            }
+    const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+        
+      printNums(20);
+        
+        
         </script>
     </div>
     <div class="wrap">
         <br>
         <h1>Display the even numbers from 1 to 20. </h1>
         <script>
-
-            for (let i = 1; i <= 20; i++) {
-                const div = document.createElement('div')
-
-                document.body.appendChild(div);
-                (i % 2 === 0) ? div.textContent = i : null;
-
-
-            }
+            printEvenNums(20);
         </script>
     </div>
     <div class="wrap">
         <br>
         <h1> Display the odd numbers from 1 to 20.</h1>
         <script>
-
-
-            for (let i = 1; i <= 20; i++) {
-                const div = document.createElement('div');
-
-                document.body.appendChild(div);
-
-                (i % 2 !== 0) ? div.textContent = i : null;
-
-            }
+            printOddNums(20);
         </script>
     </div>
     <div class="wrap">
         <br>
         <h1>Display the multiples of 5 up to 100. </h1>
         <script>
-
-            for (let i = 0; i <= 20; i += 5) {
-                const div = document.createElement('div');
-                div.textContent = i;
-                document.body.appendChild(div);
-
-            }
+        printMultsOfFive(100);
         </script>
     </div>
     <div class="wrap">
         <br>
         <h1>Display the square numbers up to 100.</h1>
         <script>
-            for (i = 1; i <= 10; i++) {
-                const div = document.createElement('div');
-                div.textContent = i * i;
-                document.body.appendChild(div);
-            }
+            printSqr(100);
         </script>
     </div>
     <div class="wrap">
         <br>
         <h1> Display the numbers counting backwards from 20 to 1. </h1>
         <script>
-            for (let i = 20; i >= 1; i--) {
-                const div = document.createElement('div');
-                div.textContent = i;
-                document.body.appendChild(div);
-            }
+            printNumsReverse(20);
         </script>
     </div>
     <div class="wrap">
         <br>
         <h1> Display the even numbers counting backwards from 20 </h1>
         <script>
-            for (let i = 20; i >= 0; i--) {
-                const div = document.createElement('div');
-                div.textContent = i;
-                (i % 2 === 0) ? document.body.appendChild(div) : null;
-
-            }
+           printEvenNumsReverse(20);
         </script>
     </div>
     <div class="wrap">
@@ -119,12 +83,7 @@
         <script>
 
 
-            for (let i = 20; i >= 1; i--) {
-                const div = document.createElement('div');
-                div.textContent = i;
-                (i % 2 !== 0) ? document.body.appendChild(div) : null;
-
-            }
+            printOddNumsReverse(20);
         </script>
     </div>
     <div class="wrap">
@@ -132,12 +91,7 @@
         <h1> Display the multiples of 5, counting down from 100 </h1>
         <script>
 
-            for (let i = 20; i >= 0; i -= 5) {
-                const div = document.createElement('div');
-                div.textContent = i;
-                document.body.appendChild(div);
-
-            }
+          printMultsOfFiveReverse(100);
 
 
         </script>
@@ -146,11 +100,7 @@
         <br>
         <h1> Display the square numbers, counting down from 100 </h1>
         <script>
-            for (i = 10; i > 0; i--) {
-                const div = document.createElement('div');
-                div.textContent = i * i;
-                document.body.appendChild(div);
-            }
+        printSqrReverse(100)
 
         </script>
     </div>
@@ -158,11 +108,7 @@
         <br>
         <h1> Display the 20 elements of sampleArray. </h1>
         <script>
-            for (let i = 0; i < sampleArray.length; i++) {
-                const div = document.createElement('div');
-                div.textContent = sampleArray[i];
-                document.body.appendChild(div);
-            }
+            printArray(sampleArray);
 
         </script>
     </div>
@@ -170,25 +116,16 @@
         <br>
         <h1> Display all the even numbers contained in sampleArray. </h1>
         <script>
-            for (let i = 0; i < sampleArray.length; i++) {
-                const div = document.createElement('div');
-                div.textContent = sampleArray[i];
-                (sampleArray[i] % 2 === 0) ? document.body.appendChild(div) : null;
-
-
-            }
+          
+            printArrayEven(sampleArray);
         </script>
     </div>
     <div class="wrap">
         <br>
         <h1> Display all the odd numbers contained in sampleArray. </h1>
         <script>
-            for (let i = 0; i < sampleArray.length; i++) {
-                const div = document.createElement('div');
-                div.textContent = sampleArray[i];
-                (sampleArray[i] % 2 !== 0) ? document.body.appendChild(div) : null;
-
-            }
+         printArrayOdd(sampleArray);
+            
         </script>
         </script>
     </div>
@@ -196,12 +133,10 @@
         <br>
         <h1> Display the square of each element in sampleArray. </h1>
         <script>
-            let newArr = sampleArray.map((a) => a * a);
-            for (let i = 0; i < newArr.length; i++) {
-                const div = document.createElement('div');
-                div.textContent = newArr[i];
-                document.body.appendChild(div);
-            }
+         
+             printArraySqr(sampleArray)
+         
+            
 
         </script>
     </div>
@@ -209,49 +144,32 @@
         <br>
         <h1> Display the sum of all the numbers from 1 to 20. </h1>
         <script>
-            {
-                let result;
-                for (let i = 1; i <= 20; i++) {
-                    result = + i;
-                } const div = document.createElement('div');
-                div.textContent = result;
-                document.body.appendChild(div);
-            }
+            printSum(20);
         </script>
     </div>
     <div class="wrap">
         <br>
         <h1> Display the sum of all the elements in sampleArray. </h1>
         <script>
-            {
-                const div = document.createElement('div');
-                div.textContent = sampleArray.reduce((a, b) => a + b);
-
-
-                document.body.appendChild(div);
-            }
+          printSumArray(sampleArray)
         </script>
     </div>
     <div class="wrap">
         <br>
         <h1>Display the smallest element in sampleArray. </h1>
         <script>
-            {
-                const div = document.createElement('div');
-                div.textContent = Math.min(...sampleArray);
-                document.body.appendChild(div);
-            }
+            
+             arraySmallest(sampleArray);
+            
         </script>
     </div>
     <div class="wrap">
         <br>
         <h1> Display the largest element in sampleArray. .</h1>
         <script>
-            {
-                const div = document.createElement('div');
-                div.textContent = Math.max(...sampleArray);
-                document.body.appendChild(div);
-            }
+            
+                arrayLargest(sampleArray);
+
 
         </script>
     </div>
