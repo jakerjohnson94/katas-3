@@ -78,7 +78,7 @@
 
         <h1> As in #21, but alternate colors so that every other rectangle is red.</h1>
         <script>
-            for (let i = 0; i <= sampleArray.length; i++) {
+            for (let i = 1; i <= sampleArray.length; i++) {
                 const div = document.createElement('div');
                 div.classList = 'gray-19';
                 (i % 2 === 0) ? div.setAttribute('style', 'width:' + sampleArray[i] + 'px;' + 'background: red;') : div.setAttribute('style', 'width:' + sampleArray[i] + 'px;');
