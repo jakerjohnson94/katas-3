@@ -16,176 +16,40 @@
         h1 {
             font-size: 1.2em;
         }
+        body{ 
+            width: 100%;
 
-        body {}
-    </style>
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+     </style>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="wrap">
-        <h1>Display the numbers from 1 to 20. </h1>
-        <script> 
+        <div class="wrap">
+                <script>runKatas();</script>
+                </div>
 
-    const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
-        
-      printNums(20);
-        
-        
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1>Display the even numbers from 1 to 20. </h1>
-        <script>
-            printEvenNums(20);
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1> Display the odd numbers from 1 to 20.</h1>
-        <script>
-            printOddNums(20);
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1>Display the multiples of 5 up to 100. </h1>
-        <script>
-        printMultsOfFive(100);
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1>Display the square numbers up to 100.</h1>
-        <script>
-            printSqr(100);
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1> Display the numbers counting backwards from 20 to 1. </h1>
-        <script>
-            printNumsReverse(20);
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1> Display the even numbers counting backwards from 20 </h1>
-        <script>
-           printEvenNumsReverse(20);
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1> Display the odd numbers from 20 to 1, counting backwards </h1>
-        <script>
-
-
-            printOddNumsReverse(20);
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1> Display the multiples of 5, counting down from 100 </h1>
-        <script>
-
-          printMultsOfFiveReverse(100);
-
-
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1> Display the square numbers, counting down from 100 </h1>
-        <script>
-        printSqrReverse(100)
-
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1> Display the 20 elements of sampleArray. </h1>
-        <script>
-            printArray(sampleArray);
-
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1> Display all the even numbers contained in sampleArray. </h1>
-        <script>
-          
-            printArrayEven(sampleArray);
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1> Display all the odd numbers contained in sampleArray. </h1>
-        <script>
-         printArrayOdd(sampleArray);
-            
-        </script>
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1> Display the square of each element in sampleArray. </h1>
-        <script>
-         
-             printArraySqr(sampleArray)
-         
-            
-
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1> Display the sum of all the numbers from 1 to 20. </h1>
-        <script>
-            printSum(20);
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1> Display the sum of all the elements in sampleArray. </h1>
-        <script>
-          printSumArray(sampleArray)
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1>Display the smallest element in sampleArray. </h1>
-        <script>
-            
-             arraySmallest(sampleArray);
-            
-        </script>
-    </div>
-    <div class="wrap">
-        <br>
-        <h1> Display the largest element in sampleArray. .</h1>
-        <script>
-            
-                arrayLargest(sampleArray);
-
-
-        </script>
-    </div>
     <div class="wrap">
         <br>
         <h1> Display 20 solid gray rectangles, each 20px high and 100px wide </h1>
         <script>
+            const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
             for (let i = 1; i <= 20; i++) {
                 const div = document.createElement('div');
                 div.setAttribute('style', 'width:100px');
                 div.classList = 'gray-19';
                 document.body.appendChild(div);
             }
-
         </script>
     </div>
+
+
     <div class="wrap">
         <br>
         <h1> Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px </h1>
@@ -196,9 +60,10 @@
                 div.setAttribute('style', 'width:' + (100 + i) + 'px;');
                 document.body.appendChild(div);
             }
-
         </script>
     </div>
+
+
     <div class="wrap">
         <br>
         <h1> Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray.</h1>
@@ -209,9 +74,10 @@
                 div.setAttribute('style', 'width:' + sampleArray[i] + 'px;');
                 document.body.appendChild(div);
             }
-
         </script>
     </div>
+
+
     <div class="wrap">
         <br>
         <h1> As in #21, but alternate colors so that every other rectangle is red.</h1>
@@ -222,9 +88,10 @@
                 (i % 2 === 0) ? div.setAttribute('style', 'width:' + sampleArray[i] + 'px;' + 'background: red;') : div.setAttribute('style', 'width:' + sampleArray[i] + 'px;');
                 document.body.appendChild(div);
             }
-
         </script>
-    </div>
+    </div> 
+
+
     <div class="wrap">
         <br>
         <h1> As in #21, but color the rectangles with even widths red. </h1>
@@ -236,8 +103,7 @@
                 document.body.appendChild(div);
             }
         </script>
-
-    </div>
+    </div> 
 
 </body>
 
