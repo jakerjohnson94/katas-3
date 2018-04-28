@@ -6,37 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>katas-3</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <style>
         .gray-19 {
             height: 20px;
-            background: gray;
+            background: rgba(178, 109, 109, .98);
             margin: 5px;
         }
 
         h1 {
             font-size: 1.2em;
         }
-        body{ 
-            width: 100%;
-
+        body, html{ 
+            font-family: 'Lato', sans-serif;
+            background-color: rgb(249, 249, 255);
             display: grid;
             justify-content: center;
             align-items: center;
             text-align: center;
-            
         }
+ 
      </style>
 
     <script src="script.js"></script>
 </head>
 
 <body>
+ <div class="style">
         <div class="wrap">
                 <script>runKatas();</script>
                 </div>
 
-    <div class="wrap">
-        <br>
+    <!-- <div class="wrap">
+        
         <h1> Display 20 solid gray rectangles, each 20px high and 100px wide </h1>
         <script>
             const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
@@ -47,11 +49,7 @@
                 document.body.appendChild(div);
             }
         </script>
-    </div>
-
-
-    <div class="wrap">
-        <br>
+ 
         <h1> Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px </h1>
         <script>
             for (let i = 0; i <= 100; i += 5) {
@@ -103,8 +101,8 @@
                 document.body.appendChild(div);
             }
         </script>
-    </div> 
-
+    </div>  -->
+</div>
 </body>
 
 </html>
