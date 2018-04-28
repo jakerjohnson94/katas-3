@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="script.js"></script>
     <style>
-        .gray-19 {
+        .gray {
             height: 20px;
             background: rgba(94, 124, 183, 0.98);
             margin: 5px;
@@ -46,7 +46,7 @@
             for (let i = 1; i <= 20; i++) {
                 const div = document.createElement('div');
                 div.setAttribute('style', 'width:100px');
-                div.classList = 'gray-19';
+                div.classList = 'gray';
                 document.body.appendChild(div);
             }
         </script>
@@ -55,7 +55,7 @@
         <script>
             for (let i = 0; i <= 100; i += 5) {
                 const div = document.createElement('div');
-                div.classList = 'gray-19';
+                div.classList = 'gray';
                 div.setAttribute('style', 'width:' + (100 + i) + 'px;');
                 document.body.appendChild(div);
             }
@@ -67,7 +67,7 @@
         <script>
             for (let i = 0; i <= sampleArray.length; i++) {
                 const div = document.createElement('div');
-                div.classList = 'gray-19';
+                div.classList = 'gray';
                 div.setAttribute('style', 'width:' + sampleArray[i] + 'px;');
                 document.body.appendChild(div);
             }
@@ -80,7 +80,7 @@
         <script>
             for (let i = 1; i <= sampleArray.length; i++) {
                 const div = document.createElement('div');
-                div.classList = 'gray-19';
+                div.classList = 'gray';
                 (i % 2 === 0) ? div.setAttribute('style', 'width:' + sampleArray[i] + 'px;' + 'background: red;') : div.setAttribute('style', 'width:' + sampleArray[i] + 'px;');
                 document.body.appendChild(div);
             }
@@ -94,7 +94,7 @@
         <script>
             for (let i = 0; i <= sampleArray.length; i++) {
                 const div = document.createElement('div');
-                div.classList = 'gray-19';
+                div.classList = 'gray';
                 (sampleArray[i] % 2 === 0) ? div.setAttribute('style', 'width:' + sampleArray[i] + 'px;' + 'background: red;') : div.setAttribute('style', 'width:' + sampleArray[i] + 'px;');
                 document.body.appendChild(div);
             }
